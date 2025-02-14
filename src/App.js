@@ -1,11 +1,15 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import SlotManager from './components/SlotManager';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hi</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<SlotManager />} />
+      </Routes>
+      </Router>
   );
 }
 
