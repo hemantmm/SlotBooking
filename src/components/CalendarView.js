@@ -16,7 +16,7 @@ const generateTimeSlots = (blockedStart, blockedEnd, bookedSlots) => {
     ) {
       slots.push(timeStr);
     }
-    time.setMinutes(time.getMinutes() + 30);
+    time.setMinutes(time.getMinutes() + 60);
   }
   return slots;
 };
