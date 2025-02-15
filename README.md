@@ -2,6 +2,22 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Prerequisites
+
+Make sure you have Node.js and npm installed on your machine.
+
+### Installation
+
+ Clone the repository:
+   
+   git clone https://github.com/hemantmm/SlotBooking.git
+   cd slotbooking
+
+ Install the dependencies:
+	
+	npm install
+
+
 ## Available Scripts
 
 In the project directory, you can run:
