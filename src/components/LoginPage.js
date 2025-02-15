@@ -12,8 +12,9 @@ function LoginPage() {
         if(name === '' || email === '') {
             setError('Please fill in all the fields')
         } else {
-            localStorage.setItem('name', name)
-            localStorage.setItem('email', email)
+            // localStorage.setItem('name', name)
+            // localStorage.setItem('email', email)
+            localStorage.setItem("user",JSON.stringify({name,email}))
             navigate('/slot')
         }
     }
