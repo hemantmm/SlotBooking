@@ -14,7 +14,12 @@ function LoginPage() {
         } else {
             // localStorage.setItem('name', name)
             // localStorage.setItem('email', email)
-            localStorage.setItem("user",JSON.stringify({name,email}))
+            const existingUser=JSON.parse(localStorage.getItem("user")) || []
+            const newUser={name,email}
+            existingUser.push(newUser)
+            // localStorage.setItem("user",JSON.stringify({name,email}))
+            localStorage.setItem("user",JSON.stringify(existingUser))
+            localStorage.setItem("currentUser",JSON.stringify(newUser))
             navigate('/slot')
         }
     }
