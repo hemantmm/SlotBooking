@@ -3,15 +3,6 @@ import { useNavigate } from 'react-router-dom'
 
 function UserProfile() {
     const navigate=useNavigate()
-    // const [user,setUser]=useState({name:"",email:""})
-
-    // useEffect(()=>{
-    //     const user=JSON.parse(localStorage.getItem("user")) || []
-    //     if(user){
-    //         setUser(user)
-    //     }
-    // },[])
-
     const [currentUser,setCurrentUser]=useState({name:"",email:""})
 
     useEffect(()=>{
