@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import {useNavigate} from "react-router-dom"
+import ProfileDropdown from './ProfileDropdown'
 
 const days=["MON","TUE","WED","THU","FRI","SAT","SUN"]
 
@@ -38,7 +39,10 @@ function SlotManager() {
   return (
     <div className='flex flex-col items-center min-h-screen p-6 bg-purple-600'>
         <div className='rounded-lg p-6 w-full max-w-3xl bg-purple-400'>
-            <h2 className='text-2xl font-bold text-center mb-4 text-white'>Manage Weekly Unavailability</h2>
+            <div className='flex items-center justify-between'>
+                <h2 className='text-2xl font-bold text-center mb-4 text-white'>Manage Weekly Unavailability</h2>
+                <ProfileDropdown />
+            </div>
             <div className='space-y-4'>
                 {days.map((day)=>(
                     <div key={day} className='flex flex-wrap items-center justify-between p-4 rounded-lg'>
