@@ -5,6 +5,7 @@ import SlotManager from './components/SlotManager';
 import CalendarView from './components/CalendarView';
 import LoginPage from './components/LoginPage';
 import UserProfile from './components/UserProfile';
+import ConfirmBooking from './components/ConfirmBooking';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/slot" element={<SlotManager />} />
         <Route path="/calendar" element={<CalendarView />} />
         <Route path="/profile" element={<UserProfile />} />
+        <Route path="/confirm-booking" element={<ConfirmBooking />} />
       </Routes>
       </Router>
   );

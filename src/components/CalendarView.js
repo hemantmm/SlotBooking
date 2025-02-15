@@ -108,6 +108,12 @@ const CalendarView = () => {
     }
   };
 
+  const handleSlotClick = (slot) => {
+    const dateKey = selectedDate.toISOString().split("T")[0];
+    localStorage.setItem("selectedSlot", JSON.stringify({ date: dateKey, time:slot }));
+    navigate("/confirm-booking");
+  }
+
   return (
     <div className="bg-purple-500">
       <div className="flex items-center justify-center pb-3 pt-3">
@@ -147,6 +153,7 @@ const CalendarView = () => {
                 <button
                   key={index}
                   className="border-4 w-32 p-2 m-1 text-sm font-medium rounded-lg border-purple-500 hover:bg-purple-500 hover:text-white"
+                  onClick={() => handleSlotClick(slot)}
                 >
                   {slot}
                 </button>
