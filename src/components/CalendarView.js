@@ -156,7 +156,7 @@ const CalendarView = () => {
 
       <button
         className="w-full text-purple-400 flex items-center justify-center font-2xl font-bold mt-6 py-3 bg-white rounded-lg shadow-md"
-        onClick={() => navigate("/")}
+        onClick={() => navigate("/slot")}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
