@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
+import ProfileDropdown from "./ProfileDropdown";
 
 const generateTimeSlots = (blockedStart, blockedEnd, bookedSlots) => {
   const slots = [];
@@ -111,9 +112,14 @@ const CalendarView = () => {
     <div className="bg-purple-500">
       <div className="flex items-center justify-center pb-3 pt-3">
         <div className="bg-white rounded-lg p-6 w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl">
-          <h2 className="text-2xl font-bold text-center text-purple-500 mb-4">
+          
+           <div className='flex items-center justify-between'>
+                {/* <h2 className='text-2xl font-bold text-center mb-4 text-white'>Manage Weekly Unavailability</h2> */}
+                <h2 className="text-2xl font-bold text-center text-purple-500 mb-4">
             Select a Date
           </h2>
+                <ProfileDropdown />
+            </div>
           <div className="flex justify-center">
             <Calendar
               onClickDay={handleDateClick}

@@ -30,7 +30,7 @@ function ProfileDropdown() {
                 <div className='absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-1'>
                     {/* <a href='/profile' className='block px-4 py-2 text-sm text-gray-700 hover:bg-purple-500 hover:text-white'>Profile</a> */}
                     <span className='block px-4 py-2 text-sm text-gray-700 hover:bg-purple-500 hover:text-white cursor-pointer' onClick={profileNavigate}>Profile</span>
-                    <span className='block px-4 py-2 text-sm text-gray-700 hover:bg-purple-500 hover:text-white cursor-pointer' onClick={handleLogout}>Logout</span>
+                    {/* <span className='block px-4 py-2 text-sm text-gray-700 hover:bg-purple-500 hover:text-white cursor-pointer' onClick={handleLogout}>Logout</span> */}
                 </div>
                 
             )}

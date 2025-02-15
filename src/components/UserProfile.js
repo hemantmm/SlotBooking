@@ -32,7 +32,7 @@ function UserProfile() {
                 <h3 className="text-xl font-semibold mb-4 text-center text-white">Email: {currentUser.email}</h3>
             </div>
             <div className='mt-4'>
-                <button className='w-full bg-white text-purple-500 font-bold text-lg p-2 rounded-lg shadow-md' onClick={()=>navigate("/slot")}>Slot Management Page</button>
+                <button className='w-full bg-white text-purple-500 font-bold text-lg p-2 rounded-lg shadow-md' onClick={()=>navigate("/calendar")}>Calendar View Page</button>
             </div>
         </div>
     </div>
