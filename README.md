@@ -1,19 +1,25 @@
 # Slot Booking Application
 
 App Overview: Slot-booking application built using React.js and TailwindCSS.
+
 Unavailability: Users can set their unavailability so that apart from that timing, all the time slots would be visible to the users to whom the particular is sharing the link of the calendar page view where the other user can look at the available time slots.
+
 Responsiveness: This app is responsive for the screen size.
+
 Slot Management: The user can create, edit, and delete the time slots according to the needs of the itself.
+
 Timezone: The user can set their timezone.
+
 Profile-Page: The user can view their profile with their name and email.
 
 
 # Additional/Extra features: 
 
 Login-Page: The login page asks for name and email as soon as the user enters the details it will navigate the user to the SlotManager page.
+
 Confirmation-Page: Users are redirected to the confirm-booking page once they select a time slot.
-After clicking "confirm-booking", an alert appears confirming the booking.
-The booked time slot would disappear.
+
+After clicking "confirm-booking", an alert appears confirming the booking. The booked time slot would disappear.
 
 
 
